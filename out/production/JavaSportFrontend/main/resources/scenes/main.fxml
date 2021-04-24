@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="723.0" prefWidth="1220.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.controllers.MainController">
+   <children>
+      <Button fx:id="games" layoutX="103.0" mnemonicParsing="false" onAction="#onGamesAction" prefHeight="41.0" prefWidth="103.0" text="Мероприятия" />
+      <Button fx:id="leagues" layoutX="279.0" mnemonicParsing="false" onAction="#onLeaguesAction" prefHeight="41.0" prefWidth="57.0" text="Лиги" />
+      <Button fx:id="сountries" layoutX="336.0" mnemonicParsing="false" onAction="#onCountriesAction" prefHeight="41.0" prefWidth="57.0" text="Страны" />
+      <Button fx:id="teams" layoutX="206.0" mnemonicParsing="false" onAction="#onTeamsAction" prefHeight="41.0" prefWidth="73.0" text="Команды" />
+      <Button fx:id="mainPage" mnemonicParsing="false" onAction="#onGamesAction" prefHeight="41.0" prefWidth="103.0" text="Главная" />
+      <AnchorPane fx:id="main" layoutX="3.0" layoutY="41.0" prefHeight="681.0" prefWidth="1220.0" />
+   </children>
+</AnchorPane>
