@@ -1,11 +1,11 @@
 package utils;
 
 public enum Menu {
-    home("home"),
-    teams("teams"),
-    leagues("leagues"),
-    countries("countries"),
-    games("games");
+    Home("home"),
+    Teams("teams"),
+    Leagues("leagues"),
+    Countries("countries"),
+    Games("games");
 
 
     private String title;

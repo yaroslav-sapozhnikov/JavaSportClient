@@ -65,8 +65,7 @@ public class Controller {
 
         if (message.equals("LOGIN_SUCCESSFUL")) {
             loginButton.getScene().getWindow().hide();
-            MainController mainController = new MainController();
-            mainController.loadView(thisStage);
+            MainController.show();
         }
     }
 

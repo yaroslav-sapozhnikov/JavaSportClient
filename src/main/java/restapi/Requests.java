@@ -29,7 +29,7 @@ public class Requests {
 
 
     public static String PostRequest(String urlString, String jsonString) {
-
+        System.out.println(jsonString);
         try {
             URL url = new URL(urlString);
             URLConnection conn = url.openConnection();
@@ -106,6 +106,7 @@ public class Requests {
             while ((inputLine = br.readLine()) != null) {
                 sb.append(inputLine);
             }
+            System.out.println(sb.toString());
             return sb.toString();
         } catch (IOException e) {
             e.printStackTrace();

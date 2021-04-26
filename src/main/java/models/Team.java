@@ -3,45 +3,66 @@ package models;
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 import dto.CountryDto;
+import dto.LeagueDto;
+import dto.TeamDto;
 import javafx.beans.property.SimpleLongProperty;
 import javafx.beans.property.SimpleStringProperty;
 
-public class Country {
+public class Team {
     private SimpleLongProperty id;
     private SimpleStringProperty name;
     private SimpleStringProperty shortName;
+    private League league;
+    private SimpleStringProperty leagueName;
 
-    public Country (Long id, String name, String shortName){
+    public Team(Long id, String name, String shortName, League league) {
         this.id = new SimpleLongProperty(id);
         this.name = new SimpleStringProperty(name);
         this.shortName = new SimpleStringProperty(shortName);
+        this.league = league;
     }
 
-    public Country (String name, String shortName) {
+    public Team(String name, String shortName, League league) {
         this.name = new SimpleStringProperty(name);
         this.shortName = new SimpleStringProperty(shortName);
+        this.league = league;
     }
 
-    public Country (Long id) {
+    public Team(Long id) {
         this.id = new SimpleLongProperty(id);
     }
 
-    public Country (JsonObject jsonObject) {
+    public Team (JsonObject jsonObject) {
         name = new SimpleStringProperty(jsonObject.get("name").getAsString());
         shortName = new SimpleStringProperty(jsonObject.get("shortName").getAsString());
+        league = new League(jsonObject.get("league").getAsJsonObject());
         id = new SimpleLongProperty(jsonObject.get("id").getAsLong());
+        leagueName = new SimpleStringProperty(league.getName());
     }
 
-    public String toCreateDto() {
+    public String toJsonCreate() {
+
         Gson gson = new Gson();
-        CountryDto countryDto = new CountryDto(this.name.get(), this.shortName.get());
-        return gson.toJson(countryDto);
+        TeamDto teamDto = new TeamDto(
+                this.name.get(),
+                this.shortName.get(),
+                new LeagueDto(this.league.getId(), null, null)
+        );
+
+        return gson.toJson(teamDto);
     }
 
-    public String toUpdateDto() {
+    public String toJsonUpdate() {
+
         Gson gson = new Gson();
-        CountryDto countryDto = new CountryDto(this.id.get(), this.name.get(), this.shortName.get());
-        return gson.toJson(countryDto);
+        TeamDto teamDto = new TeamDto(
+                this.id.get(),
+                this.name.get(),
+                this.shortName.get(),
+                new LeagueDto(this.league.getId(), null, null)
+        );
+
+        return gson.toJson(teamDto);
     }
 
     public long getId() {
@@ -80,8 +101,15 @@ public class Country {
         this.shortName.set(shortName);
     }
 
-    @Override
-    public String toString() {
-        return name.get();
+    public League getLeague() {
+        return league;
+    }
+
+    public void setLeague(League league) {
+        this.league = league;
+    }
+
+    public String getLeagueName() {
+        return this.leagueName.get();
     }
 }
