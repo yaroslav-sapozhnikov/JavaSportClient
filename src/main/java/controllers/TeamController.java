@@ -6,6 +6,9 @@ import javafx.collections.transformation.FilteredList;
 import javafx.collections.transformation.SortedList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.Label;
@@ -14,11 +17,14 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.AnchorPane;
+import javafx.stage.Stage;
 import models.Country;
 import models.League;
 import models.Team;
 import restapi.LeaguesApi;
 import restapi.TeamsApi;
+
+import java.io.IOException;
 
 public class TeamController {
 
@@ -79,7 +85,6 @@ public class TeamController {
         String name = nameField.getText();
         String shortName = shortNameField.getText();
         League leagueName = leagueChoiceBox.getSelectionModel().getSelectedItem();
-        System.out.println(leagueName.getId());
         Team addTeam = new Team(name, shortName, leagueName);
         String response = teamsApi.createTeam(addTeam);
         if (!response.equals("\"TEAM_CREATED\"")) {
@@ -132,6 +137,24 @@ public class TeamController {
 
     @FXML
     void onSearchButtonAction(ActionEvent event) {
+        Team selectedTeam = leaguesTable.getSelectionModel().getSelectedItem();
+
+        try {
+            Stage stage = new Stage();
+            FXMLLoader loader = new FXMLLoader(LoginController.class.getResource("/scenes/statistics.fxml"));
+
+            StatisticsController statisticsController = new StatisticsController(selectedTeam);
+            loader.setController(statisticsController);
+            Parent view = loader.load();
+            stage.setScene(new Scene(view));
+
+            stage.show();
+
+        } catch (IOException e) {
+            e.printStackTrace();
+
+        }
+
 
     }
 

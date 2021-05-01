@@ -65,6 +65,10 @@ public class Team {
         return gson.toJson(teamDto);
     }
 
+    public String toString () {
+        return this.name.get();
+    }
+
     public long getId() {
         return id.get();
     }

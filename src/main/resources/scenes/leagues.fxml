@@ -9,32 +9,31 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="808.0" prefWidth="1220.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.LeagueController">
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="808.0" prefWidth="828.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.LeagueController">
    <children>
-      <TableView fx:id="leaguesTable" layoutX="387.0" layoutY="68.0" prefHeight="589.0" prefWidth="447.0">
+      <TableView fx:id="leaguesTable" layoutX="191.0" layoutY="68.0" prefHeight="589.0" prefWidth="447.0">
         <columns>
           <TableColumn fx:id="nameColumn" prefWidth="221.0" text="Name" />
           <TableColumn fx:id="countryColumn" minWidth="0.0" prefWidth="225.0" text="Country" />
         </columns>
       </TableView>
-      <Button fx:id="addButton" layoutX="541.0" layoutY="718.0" mnemonicParsing="false" onAction="#onAddButtonAction" prefHeight="36.0" prefWidth="139.0" text="Добавить" />
-      <Button fx:id="editButton" layoutX="695.0" layoutY="718.0" mnemonicParsing="false" onAction="#onEditButtonAction" prefHeight="36.0" prefWidth="139.0" text="Изменить" />
-      <Button fx:id="deleteButton" layoutX="387.0" layoutY="718.0" mnemonicParsing="false" onAction="#onDeleteButtonAction" prefHeight="36.0" prefWidth="139.0" text="Удалить" />
-      <TextField fx:id="searchField" layoutX="387.0" layoutY="14.0" prefHeight="36.0" prefWidth="294.0" />
-      <Button fx:id="searchButton" layoutX="695.0" layoutY="14.0" mnemonicParsing="false" onAction="#onSearchButtonAction" prefHeight="36.0" prefWidth="139.0" text="Поиск" />
-      <TextField fx:id="nameField" layoutX="452.0" layoutY="675.0" prefHeight="25.0" prefWidth="195.0" promptText="Название" />
-      <Label fx:id="errorLabel" layoutX="438.0" layoutY="764.0" text="Добавьте, удалите или измените лигу" textAlignment="CENTER">
+      <Button fx:id="addButton" layoutX="345.0" layoutY="718.0" mnemonicParsing="false" onAction="#onAddButtonAction" prefHeight="36.0" prefWidth="139.0" text="Добавить" />
+      <Button fx:id="editButton" layoutX="499.0" layoutY="718.0" mnemonicParsing="false" onAction="#onEditButtonAction" prefHeight="36.0" prefWidth="139.0" text="Изменить" />
+      <Button fx:id="deleteButton" layoutX="191.0" layoutY="718.0" mnemonicParsing="false" onAction="#onDeleteButtonAction" prefHeight="36.0" prefWidth="139.0" text="Удалить" />
+      <TextField fx:id="searchField" layoutX="191.0" layoutY="14.0" prefHeight="36.0" prefWidth="447.0" promptText="Начните ввод..." />
+      <TextField fx:id="nameField" layoutX="256.0" layoutY="675.0" prefHeight="25.0" prefWidth="195.0" promptText="Название" />
+      <Label fx:id="errorLabel" layoutX="242.0" layoutY="764.0" text="Добавьте, удалите или измените лигу" textAlignment="CENTER">
          <font>
             <Font size="20.0" />
          </font>
       </Label>
-      <Button fx:id="editButton2" layoutX="695.0" layoutY="718.0" mnemonicParsing="false" onAction="#onEditButton2Action" prefHeight="36.0" prefWidth="139.0" text="Внести изменения" />
-      <Label layoutX="387.0" layoutY="674.0" prefHeight="17.0" prefWidth="26.0" text="id:" textFill="#c9c9c9">
+      <Button fx:id="editButton2" layoutX="499.0" layoutY="718.0" mnemonicParsing="false" onAction="#onEditButton2Action" prefHeight="36.0" prefWidth="139.0" text="Внести изменения" />
+      <Label layoutX="191.0" layoutY="674.0" prefHeight="17.0" prefWidth="26.0" text="id:" textFill="#c9c9c9">
          <font>
             <Font size="18.0" />
          </font>
       </Label>
-      <Label fx:id="idLabel" layoutX="413.0" layoutY="679.0" text="   " />
-      <ChoiceBox fx:id="countryChoiceBox" layoutX="670.0" layoutY="675.0" prefWidth="150.0" />
+      <Label fx:id="idLabel" layoutX="217.0" layoutY="679.0" text="   " />
+      <ChoiceBox fx:id="countryChoiceBox" layoutX="474.0" layoutY="675.0" prefWidth="150.0" />
    </children>
 </AnchorPane>

@@ -65,14 +65,11 @@ public class LeagueController {
     private ChoiceBox<Country> countryChoiceBox;
 
     LeaguesApi leaguesApi = new LeaguesApi();
-    private SingleSelectionModel<Country> singleSelectionModel;
-
 
     @FXML
     void onAddButtonAction(ActionEvent event) {
         String name = nameField.getText();
         Country countryName = countryChoiceBox.getSelectionModel().getSelectedItem();
-        System.out.println(countryName.getId());
         League addLeague = new League(name, countryName);
         String response = leaguesApi.createLeague(addLeague);
         if (!response.equals("\"LEAGUE_CREATED\"")) {

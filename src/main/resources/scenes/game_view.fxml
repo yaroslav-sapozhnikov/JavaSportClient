@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="808.0" prefWidth="828.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button fx:id="backButton" layoutX="345.0" layoutY="719.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="139.0" text="Назад" />
+      <Label layoutX="241.0" layoutY="764.0" text="Добавьте, удалите или измените игру" textAlignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="371.0" layoutY="14.0" text="Команды">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="392.0" layoutY="66.0" text="Счет">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="349.0" layoutY="127.0" text="Ведение мяча">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="353.0" layoutY="194.0" text="Всего ударов">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="347.0" layoutY="262.0" text="Ударов в створ">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="366.0" layoutY="329.0" text="Штрафные">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="375.0" layoutY="389.0" text="Угловые">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="388.0" layoutY="451.0" text="Фолы">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="371.0" layoutY="513.0" text="Офсайды">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="331.0" layoutY="577.0" text="Красные карточки">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="333.0" layoutY="638.0" text="Желтые карточки">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Line endX="100.0" layoutX="252.0" layoutY="28.0" />
+      <Line endX="100.0" layoutX="467.0" layoutY="28.0" />
+      <Line endX="127.0" layoutX="252.0" layoutY="81.0" />
+      <Line endX="88.0" layoutX="252.0" layoutY="142.0" />
+      <Line endX="92.0" layoutX="252.0" layoutY="209.0" />
+      <Line endX="85.0" layoutX="252.0" layoutY="277.0" />
+      <Line endX="100.0" layoutX="252.0" layoutY="344.0" />
+      <Line endX="109.0" layoutX="252.0" layoutY="404.0" />
+      <Line endX="123.0" layoutX="252.0" layoutY="466.0" />
+      <Line endX="106.0" layoutX="252.0" layoutY="528.0" />
+      <Line endX="70.0" layoutX="252.0" layoutY="592.0" />
+      <Line endX="71.0" layoutX="252.0" layoutY="652.0" />
+      <Line endX="100.0" layoutX="467.0" layoutY="80.0" startX="-18.0" />
+      <Line endX="100.0" layoutX="467.0" layoutY="142.0" startX="20.0" />
+      <Line endX="100.0" layoutX="467.0" layoutY="209.0" startX="17.0" />
+      <Line endX="100.0" layoutX="467.0" layoutY="277.0" startX="28.0" />
+      <Line endX="100.0" layoutX="467.0" layoutY="344.0" startX="10.0" />
+      <Line endX="100.0" layoutX="467.0" layoutY="404.0" />
+      <Line endX="100.0" layoutX="467.0" layoutY="465.0" startX="-11.0" />
+      <Line endX="100.0" layoutX="467.0" layoutY="527.0" />
+      <Line endX="100.0" layoutX="467.0" layoutY="592.0" startX="44.0" />
+      <Line endX="100.0" layoutX="467.0" layoutY="653.0" startX="39.0" />
+      <Label fx:id="guestTeam" layoutX="190.0" layoutY="14.0" prefHeight="30.0" prefWidth="51.0" text=" " textAlignment="RIGHT">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="guestCount" layoutX="190.0" layoutY="66.0" prefHeight="30.0" prefWidth="51.0" text=" " textAlignment="RIGHT">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="guestPossesion" layoutX="190.0" layoutY="127.0" prefHeight="30.0" prefWidth="51.0" text=" " textAlignment="RIGHT">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="guestShots" layoutX="190.0" layoutY="194.0" prefHeight="30.0" prefWidth="51.0" text=" " textAlignment="RIGHT">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="guestShotsOnGoals" layoutX="190.0" layoutY="262.0" prefHeight="30.0" prefWidth="51.0" text=" " textAlignment="RIGHT">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="guestFreeKicks" layoutX="190.0" layoutY="329.0" prefHeight="30.0" prefWidth="51.0" text=" " textAlignment="RIGHT">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="guestCorners" layoutX="190.0" layoutY="390.0" prefHeight="30.0" prefWidth="51.0" text=" " textAlignment="RIGHT">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="guestFouls" layoutX="190.0" layoutY="450.0" prefHeight="30.0" prefWidth="51.0" text=" " textAlignment="RIGHT">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="guestOffsides" layoutX="190.0" layoutY="512.0" prefHeight="30.0" prefWidth="51.0" text=" " textAlignment="RIGHT">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="guestRedCards" layoutX="190.0" layoutY="578.0" prefHeight="30.0" prefWidth="51.0" text=" " textAlignment="RIGHT">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="guestYellowCards" layoutX="190.0" layoutY="637.0" prefHeight="30.0" prefWidth="51.0" text=" " textAlignment="RIGHT">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="homeTeam" layoutX="587.0" layoutY="14.0" prefHeight="30.0" prefWidth="51.0" text=" ">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="homeCount" layoutX="587.0" layoutY="65.0" prefHeight="30.0" prefWidth="51.0" text=" ">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="homePossesion" layoutX="587.0" layoutY="127.0" prefHeight="30.0" prefWidth="51.0" text=" ">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="homeShots" layoutX="587.0" layoutY="194.0" prefHeight="30.0" prefWidth="51.0" text=" ">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="homeShotsOnGoals" layoutX="587.0" layoutY="262.0" prefHeight="30.0" prefWidth="51.0" text=" ">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="homeFreeKicks" layoutX="587.0" layoutY="330.0" prefHeight="30.0" prefWidth="51.0" text=" ">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="homeCorners" layoutX="587.0" layoutY="389.0" prefHeight="30.0" prefWidth="51.0" text=" ">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="homeFouls" layoutX="587.0" layoutY="450.0" prefHeight="30.0" prefWidth="51.0" text=" ">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="homeOffsides" layoutX="587.0" layoutY="512.0" prefHeight="30.0" prefWidth="51.0" text=" ">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="homeRedCards" layoutX="587.0" layoutY="577.0" prefHeight="30.0" prefWidth="51.0" text=" ">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="homeYellowCards" layoutX="587.0" layoutY="638.0" prefHeight="30.0" prefWidth="51.0" text=" ">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

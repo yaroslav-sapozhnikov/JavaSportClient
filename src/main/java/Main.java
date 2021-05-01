@@ -1,6 +1,7 @@
+import controllers.MainController;
 import javafx.application.Application;
 import javafx.stage.Stage;
-import controllers.Controller;
+import controllers.LoginController;
 
 public class Main extends Application {
 
@@ -8,7 +9,7 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws Exception{
         primaryStage.setTitle("Hello World");
         primaryStage.setResizable(false);
-        Controller.loginView(primaryStage);
+        LoginController.loginView(primaryStage);
     }
 
 

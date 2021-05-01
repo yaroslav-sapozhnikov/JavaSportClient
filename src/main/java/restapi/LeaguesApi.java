@@ -24,8 +24,6 @@ public class LeaguesApi {
         } else {
             return "Страна успешно создана";
         }
-
-
     }
 
     public List<League> getLeagues() {
@@ -55,7 +53,7 @@ public class LeaguesApi {
     public String updateLeague(League league) {
         String jsonString = league.toJsonUpdate();
         JsonObject response = new Gson().fromJson(Requests.PutRequest(ServerURL + "/league/edit", jsonString), JsonObject.class);
-        if (response.get("error").toString().equals("\"COUNTRY_DOES_NOT_EXIST\"")) {
+        if (response.get("error").toString().equals("\"LEAGUE_DOES_NOT_EXIST\"")) {
             return "Лига не существует";
         } else {
             return "Лига успешно отредактирована";

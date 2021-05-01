@@ -1,0 +1,59 @@
+.simpleButton {
+    -fx-background-color: #FAFAFA;
+    -fx-background-radius: 15;
+    -fx-font-size: 14;
+}
+
+.back {
+    -fx-background-color: #3a096b;
+}
+
+.mainLabel {
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 30;
+}
+
+.textField {
+    -fx-background-radius: 15;
+}
+
+.menuButton {
+    -fx-background-color: #000000;
+    -fx-background-radius: 0;
+    -fx-text-fill: #FFFFFF;
+}
+
+.menuButton:hover {
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 0;
+    -fx-text-fill: #000000;
+}
+
+.errorLabel {
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 20;
+
+}
+
+.simpleTextField {
+    -fx-background-radius: 15;
+    -fx-font-size: 14;
+}
+
+.table-view {
+    -fx-background-radius: 10;
+    -fx-background-color: #FAFAFA;
+    -fx-text-align: center;
+}
+
+
+TableView {
+    -fx-text-align: center;
+    -fx-padding: 12px 0;
+    -fx-border-width: 2px;
+    -fx-border-color: #b3b3b3;
+    -fx-border-radius: 10;
+    -fx-font-size: 14px;
+    -fx-background-radius: 10;
+    -fx-font-size: 14;
+}

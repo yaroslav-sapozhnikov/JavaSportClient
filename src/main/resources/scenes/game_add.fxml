@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="808.0" prefWidth="828.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.GameAddController">
+   <children>
+      <Button fx:id="backButton" layoutX="263.0" layoutY="718.0" mnemonicParsing="false" onAction="#onBackButtonAction" prefHeight="36.0" prefWidth="139.0" text="Назад" />
+      <Label fx:id="errorLabel" layoutX="348.0" layoutY="764.0" text="Добавьте игру" textAlignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="372.0" layoutY="14.0" text="Команды">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="393.0" layoutY="66.0" text="Счет">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="350.0" layoutY="127.0" text="Ведение мяча">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="354.0" layoutY="194.0" text="Всего ударов">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="348.0" layoutY="262.0" text="Ударов в створ">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="367.0" layoutY="329.0" text="Штрафные">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="376.0" layoutY="389.0" text="Угловые">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="389.0" layoutY="451.0" text="Фолы">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="372.0" layoutY="513.0" text="Офсайды">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="332.0" layoutY="577.0" text="Красные карточки">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="334.0" layoutY="638.0" text="Желтые карточки">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Line endX="100.0" layoutX="253.0" layoutY="28.0" />
+      <Line endX="100.0" layoutX="468.0" layoutY="28.0" />
+      <Line endX="127.0" layoutX="253.0" layoutY="81.0" />
+      <Line endX="88.0" layoutX="253.0" layoutY="142.0" />
+      <Line endX="92.0" layoutX="253.0" layoutY="209.0" />
+      <Line endX="85.0" layoutX="253.0" layoutY="277.0" />
+      <Line endX="100.0" layoutX="253.0" layoutY="344.0" />
+      <Line endX="109.0" layoutX="253.0" layoutY="404.0" />
+      <Line endX="123.0" layoutX="253.0" layoutY="466.0" />
+      <Line endX="106.0" layoutX="253.0" layoutY="528.0" />
+      <Line endX="70.0" layoutX="253.0" layoutY="592.0" />
+      <Line endX="71.0" layoutX="253.0" layoutY="652.0" />
+      <Line endX="100.0" layoutX="468.0" layoutY="80.0" startX="-18.0" />
+      <Line endX="100.0" layoutX="468.0" layoutY="142.0" startX="20.0" />
+      <Line endX="100.0" layoutX="468.0" layoutY="209.0" startX="17.0" />
+      <Line endX="100.0" layoutX="468.0" layoutY="277.0" startX="28.0" />
+      <Line endX="100.0" layoutX="468.0" layoutY="344.0" startX="10.0" />
+      <Line endX="100.0" layoutX="468.0" layoutY="404.0" />
+      <Line endX="100.0" layoutX="468.0" layoutY="465.0" startX="-11.0" />
+      <Line endX="100.0" layoutX="468.0" layoutY="527.0" />
+      <Line endX="100.0" layoutX="468.0" layoutY="592.0" startX="44.0" />
+      <Line endX="100.0" layoutX="468.0" layoutY="653.0" startX="39.0" />
+      <TextField fx:id="guestCount" layoutX="82.0" layoutY="69.0" />
+      <TextField fx:id="guestPossession" layoutX="82.0" layoutY="129.0" />
+      <TextField fx:id="guestShots" layoutX="82.0" layoutY="196.0" />
+      <TextField fx:id="guestShotsOnGoal" layoutX="82.0" layoutY="265.0" />
+      <TextField fx:id="guestFreeKicks" layoutX="82.0" layoutY="332.0" />
+      <TextField fx:id="guestCorners" layoutX="82.0" layoutY="391.0" />
+      <TextField fx:id="guestFouls" layoutX="82.0" layoutY="454.0" />
+      <TextField fx:id="guestOffsides" layoutX="82.0" layoutY="514.0" />
+      <TextField fx:id="guestRedCards" layoutX="82.0" layoutY="579.0" />
+      <TextField fx:id="guestYellowCards" layoutX="82.0" layoutY="639.0" />
+      <TextField fx:id="homeCount" layoutX="597.0" layoutY="67.0" />
+      <TextField fx:id="homePossession" layoutX="597.0" layoutY="130.0" />
+      <TextField fx:id="homeShots" layoutX="597.0" layoutY="196.0" />
+      <TextField fx:id="homeShotsOnGoals" layoutX="597.0" layoutY="264.0" />
+      <TextField fx:id="homeFreeKicks" layoutX="597.0" layoutY="331.0" />
+      <TextField fx:id="homeCorners" layoutX="597.0" layoutY="392.0" />
+      <TextField fx:id="homeFouls" layoutX="597.0" layoutY="454.0" />
+      <TextField fx:id="homeOffsides" layoutX="597.0" layoutY="515.0" />
+      <TextField fx:id="homeRedCards" layoutX="597.0" layoutY="579.0" />
+      <TextField fx:id="homeYellowCards" layoutX="597.0" layoutY="639.0" />
+      <ChoiceBox fx:id="guestTeam" layoutX="82.0" layoutY="17.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="homeTeam" layoutX="597.0" layoutY="17.0" prefWidth="150.0" />
+      <Button fx:id="addButton" layoutX="426.0" layoutY="718.0" mnemonicParsing="false" onAction="#onAddButtonAction" prefHeight="36.0" prefWidth="139.0" text="Добавить" />
+   </children>
+</AnchorPane>
